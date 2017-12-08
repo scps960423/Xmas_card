@@ -1,4 +1,4 @@
-    $bg_color:#58709A;
+    $bg_color:#c36c6c;
     $writh:#fff;
     $i:0;
     .XmasCard {
@@ -24,6 +24,7 @@
                     color: $writh;
                 }
                 100% {
+                    border-color: #565656;
                     color: transparent;
                     -webkit-transform: rotateY(180deg);
                     -moz-transform: rotateY(180deg);
@@ -43,15 +44,59 @@
                     transform: rotateY(180deg);
                 }
             }
+            @keyframes Surprise {
+                0% {
+                    background: transparent;
+                    color: $writh;
+                    position: absolute;
+                    top: 306px;
+                    left: 375px;
+                } // 100% {
+                //     position: absolute;
+                //     top: 290px;
+                //     left: 350px;
+                // }
+                // 100% {
+                //     position: absolute;
+                //     top: 250px;
+                //     left: 300px;
+                // }
+                50% {
+                    position: absolute;
+                    top: 35px;
+                    left: 150px;
+                    width: 500px;
+                    height: 300px;
+                    
+                }
+                100% {
+                    position: absolute;
+                    top: 35px;
+                    left: 150px;
+                    width: 500px;
+                    height: 300px;
+                    background: #fff url('../images/gift/gift_25.png') 3px no-repeat;
+                } // 100% {
+                //     opacity: 1;
+                //     color: transparent;
+                //     height: 300px;
+                //     width: 500px;
+                //     top: 30px;
+                //     left: 100px;
+                //     background-color: $writh; // -webkit-transform: rotateY(180deg);
+                //     // -moz-transform: rotateY(180deg);
+                //     // transform: rotateY(180deg);
+                // }
+            }
             .day {
                 position: relative;
-                width: 50px;
-                height: 50px;
+                width: 55px;
+                height: 55px;
                 border: 1px solid $writh;
-                margin: 20px 52px 20px 0;
+                margin: 20px 47px 20px 0;
                 border-radius: 6px;
                 box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
-                @for $i from 1 through 25 {
+                @for $i from 1 through 24 {
                     &:nth-child(#{($i)}) {
                         animation: text 0.5s linear $i*0.5s forwards alternate;
                         /* Firefox: */
@@ -63,10 +108,11 @@
                         .icon {
                             opacity: 0;
                             position: absolute;
-                            height: 50px;
-                            width: 50px;
+                            height: 55px;
+                            width: 55px;
                             top: 0;
-                            background: url('../images/gift/gift_#{($i)}.png') no-repeat;
+                            border-radius: 6px;
+                            background:#565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
                             animation: icon 0.5s linear $i*0.5s forwards alternate;
                             /* Firefox: */
                             -moz-animation: icon 0.5s linear $i*0.5s forwards alternate;
@@ -76,6 +122,16 @@
                             -o-animation: icon 0.5s linear $i*0.5s forwards alternate;
                         }
                     }
+                }
+                &:nth-child(25) {
+                    //position: absolute;
+                    animation: Surprise 0.5s linear 12.5s forwards alternate;
+                    /* Firefox: */
+                    -moz-animation: Surprise 0.5s linear 12.5s forwards alternate;
+                    /* Safari 和 Chrome: */
+                    -webkit-animation: Surprise 0.5s linear 12.5s forwards alternate;
+                    /* Opera: */
+                    -o-animation: Surprise 0.5s linear 12.5s forwards alternate;
                 }
             }
         }
