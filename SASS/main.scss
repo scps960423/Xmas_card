@@ -1,0 +1,71 @@
+$bg_color:#58709A;
+$writh:#fff;
+$i:0;
+.XmasCard {
+    //display: none;
+    height: 400px;
+    width: 800px;
+    background-color: $bg_color;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            text-align: center;
+            line-height: 2;
+            color: $writh;
+            span {
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+        }
+        @keyframes myfirst {
+            0% {
+                background: transparent;
+            }
+            100% {
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+                background: $writh url('../images/gift/gift_001.png') no-repeat; // }
+            }
+        }
+        .day {
+            width: 50px;
+            height: 50px; //  background-color: #ffffff;
+            border: 1px solid $writh;
+            margin: 20px 52px 20px 0;
+            border-radius: 6px; // -moz-animation: like_Animation 0.3s infinite;
+            // /* Firefox */
+            // -webkit-animation: like_Animation 0.3s infinite;
+            // /* Safari and Chrome */
+            // -o-animation: likes_Animation 0.3s infinite; // -webkit-transition: all .25s ease-in;
+            // transition: all .25s ease-in;
+            // &:hover {
+            //     color: transparent;
+            //     -webkit-transform: rotateY(180deg);
+            //     -moz-transform: rotateY(180deg);
+            //     transform: rotateY(180deg);
+            //     background: $writh url('../images/gift/gift_001.png') no-repeat;
+            // }
+            @for $i from 1 through 25 {
+                &:nth-child(#{($i)}) {
+                    animation: myfirst 0.5s linear $i*0.5s infinite alternate;
+                    /* Firefox: */
+                    -moz-animation: myfirst 0.5s linear $i*0.5s infinite alternate;
+                    /* Safari 和 Chrome: */
+                    -webkit-animation: myfirst 0.5s linear $i*0.5s infinite alternate;
+                    /* Opera: */
+                    -o-animation: myfirst 0.5s linear $i*0.5s infinite alternate;
+                }
+            }
+        } // @for $i from 1 through 20 {
+        //     .li:nth-child(#{($i)}) {
+        //         -moz-animation: like_Animation $i*0.3s infinite;
+        //         /* Firefox */
+        //         -webkit-animation: like_Animation $i*0.3s infinite;
+        //         /* Safari and Chrome */
+        //         -o-animation: likes_Animation $i*0.3s infinite;
+        //     }
+        // }
+    }
+}
