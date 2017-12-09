@@ -1,119 +1,132 @@
-    $bg_color:#c36c6c;
-    $writh:#fff;
-    $i:0;
-    .XmasCard {
-        //display: none;
-        position: relative;
-        height: 400px;
-        width: 800px;
-        background-color: $bg_color;
-        ul {
-            list-style: none;
-            li {
-                display: inline-block;
-                text-align: center;
-                line-height: 2;
-                color: $writh;
-                span {
-                    font-size: 1.5em;
-                    font-weight: 300;
-                }
-            }
-            @keyframes text {
-                0% {
-                    background: transparent;
+        $bg_color:#c36c6c;
+        $writh:#fff;
+        $i:0;
+        .XmasCard {
+            //display: none;
+            position: relative;
+            height: 400px;
+            width: 800px;
+            background-color: $bg_color;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 2;
                     color: $writh;
-                }
-                100% {
-                    border-color: #565656;
-                    color: transparent;
-                    -webkit-transform: rotateY(180deg);
-                    -moz-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
-                }
-            }
-            @keyframes icon {
-                0% {
-                    background: transparent;
-                    color: $writh;
-                }
-                100% {
-                    opacity: 1;
-                    color: transparent;
-                    -webkit-transform: rotateY(180deg);
-                    -moz-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
-                }
-            }
-            @keyframes Surprise {
-                0% {
-                    background: transparent;
-                    color: $writh;
-                    position: absolute;
-                    top: 306px;
-                    left: 375px;
-                } 
-                50% {
-                    position: absolute;
-                    top: 30px;
-                    left: 150px;
-                    width: 510px;
-                    height: 310px;
-                }
-                100% {
-                    position: absolute;
-                    top: 35px;
-                    left: 150px;
-                    width: 500px;
-                    height: 300px;
-                    background: #fff url('../images/gift/gift_25.png') 3px no-repeat;
-                } 
-            }
-            .day {
-                position: relative;
-                width: 55px;
-                height: 55px;
-                border: 1px solid $writh;
-                margin: 20px 47px 20px 0;
-                border-radius: 6px;
-                box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
-                @for $i from 1 through 24 {
-                    &:nth-child(#{($i)}) {
-                        animation: text 0.5s linear $i*0.5s forwards alternate;
-                        /* Firefox: */
-                        -moz-animation: text 0.5s linear $i*0.5s forwards alternate;
-                        /* Safari 和 Chrome: */
-                        -webkit-animation: text 0.5s linear $i*0.5s forwards alternate;
-                        /* Opera: */
-                        -o-animation: text 0.5s linear $i*0.5s forwards alternate;
-                        .icon {
-                            opacity: 0;
-                            position: absolute;
-                            height: 55px;
-                            width: 55px;
-                            top: 0;
-                           border-radius: 2px;
-                            background:#565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
-                            animation: icon 0.5s linear $i*0.5s forwards alternate;
-                            /* Firefox: */
-                            -moz-animation: icon 0.5s linear $i*0.5s forwards alternate;
-                            /* Safari 和 Chrome: */
-                            -webkit-animation: icon 0.5s linear $i*0.5s forwards alternate;
-                            /* Opera: */
-                            -o-animation: icon 0.5s linear $i*0.5s forwards alternate;
-                        }
+                    span {
+                        font-size: 1.5em;
+                        font-weight: 300;
                     }
                 }
-                &:nth-child(25) {
-                    //position: absolute;
-                    animation: Surprise 0.7s linear 12.5s forwards alternate;
-                    /* Firefox: */
-                    -moz-animation: Surprise 0.7s linear 12.5s forwards alternate;
-                    /* Safari 和 Chrome: */
-                    -webkit-animation: Surprise 0.7s linear 12.5s forwards alternate;
-                    /* Opera: */
-                    -o-animation: Surprise 0.7s linear 12.5s forwards alternate;
+                @keyframes text {
+                    0% {
+                        background: transparent;
+                        color: $writh;
+                    }
+                    100% {
+                        border-color: #565656;
+                        color: transparent;
+                        -webkit-transform: rotateY(180deg);
+                        -moz-transform: rotateY(180deg);
+                        transform: rotateY(180deg);
+                    }
+                }
+                @keyframes icon {
+                    0% {
+                        background: transparent;
+                        color: $writh;
+                    }
+                    100% {
+                        opacity: 1;
+                        color: transparent;
+                        -webkit-transform: rotateY(180deg);
+                        -moz-transform: rotateY(180deg);
+                        transform: rotateY(180deg);
+                    }
+                }
+                @keyframes Surprise {
+                    0% {
+                        background: transparent;
+                        color: $writh;
+                        position: absolute;
+                        top: 306px;
+                        left: 375px;
+                    }
+                    50% {
+                        position: absolute;
+                        top: 30px;
+                        left: 150px;
+                        width: 510px;
+                        height: 310px;
+                    }
+                    100% {
+                        position: absolute;
+                        top: 35px;
+                        left: 150px;
+                        width: 500px;
+                        height: 300px;
+                        background: #fff url('../images/gift/gift_25.png') 3px no-repeat;
+                    }
+                }
+                .day {
+                    input[type="radio"] {
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                        position: absolute;
+                        outline: none;
+                        &:checked {
+                            ~label {
+                                animation: text 0.5s linear $i*0.5s forwards alternate;
+                                /* Firefox: */
+                                -moz-animation: text 0.5s linear $i*0.5s forwards alternate;
+                                /* Safari 和 Chrome: */
+                                -webkit-animation: text 0.5s linear $i*0.5s forwards alternate;
+                                /* Opera: */
+                                -o-animation: text 0.5s linear $i*0.5s forwards alternate;
+                            }
+                        }
+                    }
+                    label {
+                        display: inherit;
+                        height: 55px;
+                        width: 55px;
+                        background-color: #565656;
+                    }
+                    position: relative;
+                    width: 55px;
+                    height: 55px;
+                    border: 1px solid $writh;
+                    margin: 20px 47px 20px 0;
+                    border-radius: 6px;
+                    box-shadow: 4px 4px 12px -2px rgba(20%,
+                    20%,
+                    40%,
+                    0.5);
+                    -webkit-transition: all .25s ease-in;
+                    transition: all .25s ease-in;
+                    @for $i from 1 through 24 {
+                        &:nth-child(#{($i)}) {
+                            &:checked {
+                                color: transparent;
+                                border-color: #565656;
+                                -webkit-transform: rotateY(180deg);
+                                -moz-transform: rotateY(180deg);
+                                transform: rotateY(180deg);
+                                background:#565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
+                            }
+                        }
+                    }
+                    &:nth-child(25) {
+                        //position: absolute;
+                        animation: Surprise 0.7s;
+                        /* Firefox: */
+                        -moz-animation: Surprise 0.7s;
+                        /* Safari 和 Chrome: */
+                        -webkit-animation: Surprise 0.7s;
+                        /* Opera: */
+                        -o-animation: Surprise 0.7s linear;
+                    }
                 }
             }
         }
-    }
