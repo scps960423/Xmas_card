@@ -70,29 +70,6 @@
                     }
                 }
                 .day {
-                    input[type="radio"] {
-                        opacity: 0;
-                        filter: alpha(opacity=0);
-                        position: absolute;
-                        outline: none;
-                        &:checked {
-                            ~label {
-                                animation: text 0.5s linear $i*0.5s forwards alternate;
-                                /* Firefox: */
-                                -moz-animation: text 0.5s linear $i*0.5s forwards alternate;
-                                /* Safari 和 Chrome: */
-                                -webkit-animation: text 0.5s linear $i*0.5s forwards alternate;
-                                /* Opera: */
-                                -o-animation: text 0.5s linear $i*0.5s forwards alternate;
-                            }
-                        }
-                    }
-                    label {
-                        display: inherit;
-                        height: 55px;
-                        width: 55px;
-                        background-color: #565656;
-                    }
                     position: relative;
                     width: 55px;
                     height: 55px;
@@ -105,18 +82,19 @@
                     0.5);
                     -webkit-transition: all .25s ease-in;
                     transition: all .25s ease-in;
-                    @for $i from 1 through 24 {
-                        &:nth-child(#{($i)}) {
-                            &:checked {
-                                color: transparent;
-                                border-color: #565656;
-                                -webkit-transform: rotateY(180deg);
-                                -moz-transform: rotateY(180deg);
-                                transform: rotateY(180deg);
-                                background:#565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
-                            }
-                        }
-                    }
+                    // @for $i from 1 through 24 {
+                    //     &:nth-child(#{($i)}) {
+                    //         &:hover {
+                    //                 color: transparent;
+                    //                 border-color: #565656;
+                    //                 -webkit-transform: rotateY(180deg);
+                    //                 -moz-transform: rotateY(180deg);
+                    //                 transform: rotateY(180deg);
+                    //                 background:#565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
+                                
+                    //         }
+                    //     }
+                    // }
                     &:nth-child(25) {
                         //position: absolute;
                         animation: Surprise 0.7s;
