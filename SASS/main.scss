@@ -19,32 +19,6 @@
                         font-weight: 300;
                     }
                 }
-                @keyframes text {
-                    0% {
-                        background: transparent;
-                        color: $writh;
-                    }
-                    100% {
-                        border-color: #565656;
-                        color: transparent;
-                        -webkit-transform: rotateY(180deg);
-                        -moz-transform: rotateY(180deg);
-                        transform: rotateY(180deg);
-                    }
-                }
-                @keyframes icon {
-                    0% {
-                        background: transparent;
-                        color: $writh;
-                    }
-                    100% {
-                        opacity: 1;
-                        color: transparent;
-                        -webkit-transform: rotateY(180deg);
-                        -moz-transform: rotateY(180deg);
-                        transform: rotateY(180deg);
-                    }
-                }
                 @keyframes Surprise {
                     0% {
                         background: transparent;
@@ -76,34 +50,22 @@
                     border: 1px solid $writh;
                     margin: 20px 47px 20px 0;
                     border-radius: 6px;
-                    box-shadow: 4px 4px 12px -2px rgba(20%,
-                    20%,
-                    40%,
-                    0.5);
+                    box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
                     -webkit-transition: all .25s ease-in;
                     transition: all .25s ease-in;
-                    // @for $i from 1 through 24 {
-                    //     &:nth-child(#{($i)}) {
-                    //         &:hover {
-                    //                 color: transparent;
-                    //                 border-color: #565656;
-                    //                 -webkit-transform: rotateY(180deg);
-                    //                 -moz-transform: rotateY(180deg);
-                    //                 transform: rotateY(180deg);
-                    //                 background:#565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
-                                
-                    //         }
-                    //     }
-                    // }
                     &:nth-child(25) {
-                        //position: absolute;
-                        animation: Surprise 0.7s;
-                        /* Firefox: */
-                        -moz-animation: Surprise 0.7s;
-                        /* Safari 和 Chrome: */
-                        -webkit-animation: Surprise 0.7s;
-                        /* Opera: */
-                        -o-animation: Surprise 0.7s linear;
+                        background: transparent;
+                        color: $writh;
+                        position: absolute;
+                        top: 292px;
+                        left: 370px;
+                        position: absolute; // animation: Surprise 0.7s;
+                        // /* Firefox: */
+                        // -moz-animation: Surprise 0.7s;
+                        // /* Safari 和 Chrome: */
+                        // -webkit-animation: Surprise 0.7s;
+                        // /* Opera: */
+                        // -o-animation: Surprise 0.7s linear;
                     }
                 }
             }
