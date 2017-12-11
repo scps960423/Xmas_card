@@ -47,6 +47,7 @@
 }
 /* line 46, ../sass/main.scss */
 .XmasCard ul .day {
+  cursor: pointer;
   position: relative;
   width: 55px;
   height: 55px;
@@ -57,7 +58,7 @@
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
 }
-/* line 56, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .XmasCard ul .day:nth-child(25) {
   background: transparent;
   color: #fff;

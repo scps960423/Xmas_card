@@ -44,6 +44,7 @@
                     }
                 }
                 .day {
+                    cursor: pointer;
                     position: relative;
                     width: 55px;
                     height: 55px;
@@ -59,13 +60,7 @@
                         position: absolute;
                         top: 292px;
                         left: 370px;
-                        position: absolute; // animation: Surprise 0.7s;
-                        // /* Firefox: */
-                        // -moz-animation: Surprise 0.7s;
-                        // /* Safari 和 Chrome: */
-                        // -webkit-animation: Surprise 0.7s;
-                        // /* Opera: */
-                        // -o-animation: Surprise 0.7s linear;
+                        position: absolute;
                     }
                 }
             }
