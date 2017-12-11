@@ -2,7 +2,7 @@
         $writh:#fff;
         $i:0;
         .XmasCard {
-            //display: none;
+            display: none;
             position: relative;
             height: 400px;
             width: 800px;
@@ -10,6 +10,7 @@
             ul {
                 list-style: none;
                 li {
+                    cursor: pointer !important;
                     display: inline-block;
                     text-align: center;
                     line-height: 2;
@@ -43,9 +44,35 @@
                         background: #fff url('../images/gift/gift_25.png') 3px no-repeat;
                     }
                 }
+                @for $i from 1 through 24 {
+                    .day_rotateY {
+                        &:nth-child(#{($i)}) {
+                            color: transparent;
+                            border-color: #565656;
+                            -webkit-transform: rotateY(180deg);
+                            -moz-transform: rotateY(180deg);
+                            transform: rotateY(180deg);
+                            background: #565656 url('../images/gift/gift_#{($i)}.png') 3px no-repeat;
+                        }
+                    }
+                    .day_rotateY {
+                        &:nth-child(25) {
+                            //position: absolute;
+                            animation: Surprise 0.5s linear  forwards ;
+                            /* Firefox: */
+                            -moz-animation: Surprise 0.5s linear  forwards ;
+                            /* Safari 和 Chrome: */
+                            -webkit-animation: Surprise 0.5s linear  forwards ;
+                            /* Opera: */
+                            -o-animation: Surprise 0.5s linear forwards ;
+                        }
+                    }
+                    
+  
+                }
                 .day {
-                    cursor: pointer;
                     position: relative;
+                    
                     width: 55px;
                     height: 55px;
                     border: 1px solid $writh;
@@ -64,4 +91,7 @@
                     }
                 }
             }
+        }
+        img{
+          display: block;
         }
