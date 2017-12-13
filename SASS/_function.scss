@@ -2,3 +2,145 @@
     -webkit-transition: all .25s ease-in;
     transition: all .25s ease-in;
 }
+
+@keyframes flash {
+    0% {
+        background-color: #E66641;
+    }
+    25% {
+        background-color: #D0502A;
+    }
+    50% {
+        background-color: #BB4826;
+    }
+    75% {
+        background-color: #D0502A;
+    }
+    100% {
+        background-color: #E66641;
+    }
+}
+
+@keyframes open_gitf_bowknot {
+    0% {
+        top: 0;
+        left: 23px;
+    }
+    25% {
+        top: -5px;
+        left: 23px;
+    }
+    50% {
+        top: -5px;
+        left: 23px;
+        -moz-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+    100% {
+        top: 20px;
+        left: 10px;
+        -moz-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes close_gitf_bowknot {
+    0% {
+        top: 20px;
+        left: 10px;
+        -moz-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    25% {
+        top: -5px;
+        left: 23px;
+        -moz-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+    50% {
+        top: -5px;
+        left: 23px;
+    }
+    100% {
+        top: 0;
+        left: 23px;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes open_gitf_cover {
+    0% {
+        top: 0;
+        left: -3px;
+    }
+    25% {
+        top: -5;
+        left: -3px;
+    }
+    50% {
+        top: -25px;
+        left: -3px;
+    }
+    75% {
+        top: -20px;
+        left: -3px;
+    }
+    100% {
+        top: 10px;
+        left: 40px;
+        -moz-transform: rotate(35deg);
+        -webkit-transform: rotate(35deg);
+        -o-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+        transform: rotate(35deg);
+    }
+}
+
+@keyframes close_gitf_cover {
+    0% {
+        top: 10px;
+        left: 40px;
+        -moz-transform: rotate(35deg);
+        -webkit-transform: rotate(35deg);
+        -o-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+        transform: rotate(35deg);
+    }
+    25% {
+        top: -20px;
+        left: -3px;
+    }
+    50% {
+        top: -25px;
+        left: -3px;
+    }
+    75% {
+        top: -5;
+        left: -3px;
+    }
+    100% {
+        top: 0;
+        left: -3px;
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}

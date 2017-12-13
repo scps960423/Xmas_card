@@ -41,16 +41,24 @@
         }
         @for $i from 1 through 3 {
             .border_#{($i)} {
-                background-color: #E66641;
+                //background-color: #E66641;
                 top: ($i*40)+($i*15)+100px;
                 left: ($k - $i*12)*1px;
+                animation: flash 0.75s;
+                -moz-animation: flash 0.75s infinite;
+                -webkit-animation: flash 0.75s infinite;
+                -o-animation: flash 0.75s infinite;
             }
         }
         @for $i from 4 through 6 {
             .border_#{($i)} {
-                background-color: #E66641;
+                //background-color: #E66641;
                 top: (($i - 3)*40)+(($i - 3)*15)+100px;
                 left: $i*10+200px;
+                animation: flash 0.75s;
+                -moz-animation: flash 0.75s infinite;
+                -webkit-animation: flash 0.75s infinite;
+                -o-animation: flash 0.75s infinite;
             }
         }
         .ribbon_1 {
@@ -120,6 +128,27 @@
                     background-color: rgb(93, 15, 22);
                     z-index: 2;
                 }
+                .cover_st {
+                    top: 10px;
+                    left: 40px;
+                    -moz-transform: rotate(35deg);
+                    -webkit-transform: rotate(35deg);
+                    -o-transform: rotate(35deg);
+                    -ms-transform: rotate(35deg);
+                    transform: rotate(35deg);
+                }
+                .cover_close {
+                    animation: close_gitf_cover 0.5s linear  forwards;
+                    -moz-animation: close_gitf_cover 0.5s linear  forwards;
+                    -webkit-animation: close_gitf_cover 0.5s linear  forwards;
+                    -o-animation: close_gitf_cover 0.5s linear  forwards;
+                }
+                .cover_open {
+                    animation: open_gitf_cover 0.5s linear 1s forwards;
+                    -moz-animation: open_gitf_cover 0.5s linear 1s forwards;
+                    -webkit-animation: open_gitf_cover 0.5s linear 1s forwards;
+                    -o-animation: open_gitf_cover 0.5s linear 1s forwards;
+                }
                 .bowknot {
                     position: absolute;
                     top: 0;
@@ -128,6 +157,27 @@
                     width: 10px;
                     background-color: $writh;
                     z-index: 99;
+                }
+                .bowknot_open {
+                    animation: open_gitf_bowknot 0.75s linear forwards;
+                    -moz-animation: open_gitf_bowknot 0.75s linear forwards;
+                    -webkit-animation: open_gitf_bowknot 0.75s linear forwards;
+                    -o-animation: open_gitf_bowknot 0.75s linear forwards;
+                }
+                .bowknot_close {
+                    animation: close_gitf_bowknot 0.75s linear forwards;
+                    -moz-animation: close_gitf_bowknot 0.75s linear forwards;
+                    -webkit-animation: close_gitf_bowknot 0.75s linear forwards;
+                    -o-animation: close_gitf_bowknot 0.75s linear forwards;
+                }
+                .bowknot_st {
+                    top: 20px;
+                    left: 10px;
+                    -moz-transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
                 }
             }
         }
