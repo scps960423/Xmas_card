@@ -1,56 +1,23 @@
 $(document).ready(function () {
-  var $Xms = $(".XmasCard"),
-      $but = $(".but"),
-      $img = $(".img").find("img"),
-      $src = $img.attr("src");
+  var $Xms = $(".XmasCard_1"),
+    $but = $(".but"),
+    $img = $(".card_main").find("img"),
+    _src = $img.attr("src");
 
-
-  if ($src =="./images/按讚4-3.png")
-  {
+  console.log(_src);
+  if (_src == "./Images/card/sort04/functional_012.gif") {
     $img.css("display", "none");
     $Xms.css("display", "block")
 
   }
-    
 
-  // $but.click(function (evt) {
-  //   $Xms.css("display", "block")
-  // })
 
-  var $li = $(" .XmasCard .day"),
-      $day_rotateY = "day_rotateY";
-  // var $flag = false;
+  var $li = $(" .XmasCard_1 .day"),
+    $day_rotateY = "day_rotateY";
+
   $li.click(function (evt) {
     $(this).toggleClass($day_rotateY);
   });
 
-  // $li.eq(24).click(function (evt) {
-  //    $(this).toggleClass($day_rotateY);
 
-  //   if ($flag == false) {
-  //      $flag = true;
-  //     $li.eq(24).animate({
-  //       top: "35px",
-  //       left: "150px",
-  //       width: "500px",
-  //       height: "300px",
-  //     }, 0)
-  //     $li.eq(24).css({
-  //       "background": "#fff url('./images/gift/gift_25.png') 3px no-repeat",
-  //     })
-  //   }
-  //   else{
-  //      $flag = false;
-  //         $li.eq(24).animate({
-  //           top: "292px",
-  //           left: "370px",
-  //           width: "55px",
-  //           height: "55px",
-  //         }, 0)
-  //         $li.eq(24).css({
-  //           "background": "transparent",
-  //         })
-  //   }
-
-  // })
 })

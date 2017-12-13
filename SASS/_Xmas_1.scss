@@ -1,0 +1,80 @@
+@import 'sys';
+.XmasCard_1 {
+    background-color: $bg_color_1;
+    ul {
+        list-style: none;
+        li {
+            cursor: pointer !important;
+            display: inline-block;
+            text-align: center;
+            line-height: 2;
+            color: $writh;
+            span {
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+        }
+        @keyframes Surprise {
+            0% {
+                background: transparent;
+                color: $writh;
+                position: absolute;
+                top: 306px;
+                left: 375px;
+            }
+            50% {
+                position: absolute;
+                top: 30px;
+                left: 150px;
+                width: 510px;
+                height: 310px;
+            }
+            100% {
+                position: absolute;
+                top: 35px;
+                left: 150px;
+                width: 500px;
+                height: 300px;
+                background: #fff url('../Images/gift/gift_25.png') 3px no-repeat;
+            }
+        }
+        @for $i from 1 through 24 {
+            .day_rotateY {
+                &:nth-child(#{($i)}) {
+                    color: transparent;
+                    border-color: #565656;
+                    -webkit-transform: rotateY(180deg);
+                    -moz-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+                    background: #565656 url('../Images/gift/gift_#{($i)}.png') 3px no-repeat;
+                }
+            }
+            .day_rotateY {
+                &:nth-child(25) {
+                    animation: Surprise 0.5s linear forwards;
+                    -moz-animation: Surprise 0.5s linear forwards;
+                    -webkit-animation: Surprise 0.5s linear forwards;
+                    -o-animation: Surprise 0.5s linear forwards;
+                }
+            }
+        }
+        .day {
+            position: relative;
+            width: 55px;
+            height: 55px;
+            border: 1px solid $writh;
+            margin: 20px 47px 20px 0;
+            border-radius: 6px;
+            box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+            @extend %transition;
+            &:nth-child(25) {
+                background: transparent;
+                color: $writh;
+                position: absolute;
+                top: 292px;
+                left: 370px;
+                position: absolute;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import 'sys';
+.XmasCard_2 {
+    background-color: $bg_color_2;
+    .tree {
+        left: 100px;
+        width: 100px;
+        position: relative;
+        .tree_1,
+        .tree_2,
+        .tree_3 {
+            position: absolute;
+            border-style: solid;
+            border-color: transparent transparent rgb(4, 75, 4) transparent;
+            display: inline-block;
+        }
+        @for $i from 1 through 3 {
+            .tree_#{($i)} {
+                top: $i*40px;
+                border-width: 0 ($i*10)+100px ($i*15)+100px ($i*10)+100px;
+                left: ($k - $i*10)*1px;
+                z-index: $z-index - $i;
+                border-color: transparent transparent rgb(4, (75-+$i*5), 4) transparent;
+            }
+        }
+        .tree_root {
+            position: absolute;
+            height: 100px;
+            width: 80px;
+            background-color: #4D3900;
+            top: 250px;
+            left: 100px;
+            z-index: 0;
+        }
+    }
+    .gift {
+        .gift_1 {
+            position: relative;
+            top: 330px;
+            .box {
+                position: absolute;
+                height: 50px;
+                width: 60px;
+                background-color: #8b2121;
+            }
+            .cover {
+                position: absolute;
+                top: 0;
+                left: -3px;
+                height: 15px;
+                width: 65px;
+                background-color: #5f1616;
+            }
+            .bowknot {
+                position: absolute;
+                top: 0;
+                left: 23px;
+                height: 50px;
+                width: 10px;
+                background-color: $writh;
+            }
+        }
+    }
+}
