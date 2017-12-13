@@ -184,14 +184,87 @@
     }
     80% {
         top: 25px;
-        left: 85px;
+        left: 90px;
     }
     90% {
         top: 0px;
-        left: 90px;
+        left: 100px;
     }
     100% {
         top: 25px;
-        left: 95px;
+        left: 110px;
+    }
+}
+
+@keyframes ball_close {
+    100% {
+        top: 0;
+        left: 15px;
+    }
+    80% {
+        top: -20px;
+        left: 30px;
+    }
+    70% {
+        top: -35px;
+        left: 35px;
+    }
+    60% {
+        top: -45px;
+        left: 40px;
+    }
+    50% {
+        top: -50px;
+        left: 45px;
+    }
+    40% {
+        top: -45px;
+        left: 50px;
+    }
+    30% {
+        top: -35px;
+        left: 60px;
+    }
+    20% {
+        top: -20px;
+        left: 65px;
+    }
+    10% {
+        top: 0px;
+        left: 75px;
+    }
+    0% {
+        top: 25px;
+        left: 90px;
+    }
+}
+
+@keyframes doll_open {
+    0% {
+        top: 0px;
+        height: 50px;
+    }
+    50% {
+        top: -40px;
+        height: 70px;
+    }
+    100% {
+        top: -50px;
+        height: 70px;
+    }
+}
+
+@keyframes doll_close {
+    100% {
+        top: 0px;
+        height: 50px;
+    }
+    50% {
+        top: -40px;
+        height: 70px;
+    }
+    0% {
+        top: -50px;
+        height: 70px;
     }
 }

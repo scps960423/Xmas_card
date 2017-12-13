@@ -117,7 +117,7 @@
                     height: 50px;
                     width: 60px;
                     background-color: rgb(143, 23, 33);
-                    z-index: 1;
+                    z-index: 2;
                 }
                 .cover {
                     position: absolute;
@@ -126,7 +126,7 @@
                     height: 15px;
                     width: 65px;
                     background-color: rgb(93, 15, 22);
-                    z-index: 2;
+                    z-index: 3;
                 }
                 .cover_st {
                     top: 10px;
@@ -138,10 +138,10 @@
                     transform: rotate(35deg);
                 }
                 .cover_close {
-                    animation: close_gitf_cover 0.5s linear forwards;
-                    -moz-animation: close_gitf_cover 0.5s linear forwards;
-                    -webkit-animation: close_gitf_cover 0.5s linear forwards;
-                    -o-animation: close_gitf_cover 0.5s linear forwards;
+                    animation: close_gitf_cover 0.5s linear 1s forwards;
+                    -moz-animation: close_gitf_cover 0.5s linear 1s forwards;
+                    -webkit-animation: close_gitf_cover 0.5s linear 1s forwards;
+                    -o-animation: close_gitf_cover 0.5s linear 1s forwards;
                 }
                 .cover_open {
                     animation: open_gitf_cover 0.5s linear 1s forwards;
@@ -158,18 +158,6 @@
                     background-color: $writh;
                     z-index: 99;
                 }
-                .bowknot_open {
-                    animation: open_gitf_bowknot 0.75s linear forwards;
-                    -moz-animation: open_gitf_bowknot 0.75s linear forwards;
-                    -webkit-animation: open_gitf_bowknot 0.75s linear forwards;
-                    -o-animation: open_gitf_bowknot 0.75s linear forwards;
-                }
-                .bowknot_close {
-                    animation: close_gitf_bowknot 0.75s linear forwards;
-                    -moz-animation: close_gitf_bowknot 0.75s linear forwards;
-                    -webkit-animation: close_gitf_bowknot 0.75s linear forwards;
-                    -o-animation: close_gitf_bowknot 0.75s linear forwards;
-                }
                 .bowknot_st {
                     top: 20px;
                     left: 10px;
@@ -179,6 +167,18 @@
                     -ms-transform: rotate(-90deg);
                     transform: rotate(-90deg);
                 }
+                .bowknot_open {
+                    animation: open_gitf_bowknot 0.75s linear forwards;
+                    -moz-animation: open_gitf_bowknot 0.75s linear forwards;
+                    -webkit-animation: open_gitf_bowknot 0.75s linear forwards;
+                    -o-animation: open_gitf_bowknot 0.75s linear forwards;
+                }
+                .bowknot_close {
+                    animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
+                    -moz-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
+                    -webkit-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
+                    -o-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
+                }
                 .ball {
                     position: absolute;
                     height: 25px;
@@ -187,10 +187,41 @@
                     border-radius: 30px;
                     top: 0;
                     left: 0px;
+                    z-index: 1;
+                }
+                .ball_open {
                     animation: ball_open 0.75s linear forwards;
-                    -moz-animation: ball_open 0.75s linear forwards;
-                    -webkit-animation: ball_open 0.75s linear forwards;
-                    -o-animation: ball_open 0.75s linear forwards;
+                    -moz-animation: ball_open 0.75s linear 1.5s forwards;
+                    -webkit-animation: ball_open 0.75s linear 1.5s forwards;
+                    -o-animation: ball_open 0.75s linear 1.5s forwards;
+                }
+                .ball_close {
+                    animation: ball_close 0.5s linear forwards;
+                    -moz-animation: ball_close 0.5s linear forwards;
+                    -webkit-animation: ball_close 0.5s linear forwards;
+                    -o-animation: ball_close 0.5s linear forwards;
+                }
+                .doll {
+                    // display: none;
+                    background: url('../Images/rabbit.png');
+                    width: 50px; //   height: 75px;
+                    position: absolute;
+                }
+                .doll_st {
+                    top: -50px;
+                    height: 70px;
+                }
+                .doll_open {
+                    animation: doll_open 0.5s linear 1.5s forwards;
+                    -moz-animation: doll_open 0.5s linear 1.5s forwards;
+                    -webkit-animation: doll_open 0.5s linear 1.5s forwards;
+                    -o-animation: doll_open 0.5s linear 1.5s forwards;
+                }
+                .doll_close {
+                    animation: doll_close 0.5s linear 0.5s forwards;
+                    -moz-animation: doll_close 0.5s linear 0.5s forwards;
+                    -webkit-animation: doll_close 0.5s linear 0.5s forwards;
+                    -o-animation: doll_close 0.5s linear 0.5s forwards;
                 }
             }
         }
