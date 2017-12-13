@@ -53,6 +53,30 @@
                 left: $i*10+200px;
             }
         }
+        .ribbon_1 {
+            border-bottom: 3px solid #FFC107;
+            top: 25px;
+            left: 75px;
+            width: 130px;
+        }
+        .ribbon_2 {
+            border-bottom: 3px solid rgb(154, 240, 248);
+            top: 80px;
+            left: 72px;
+            width: 140px;
+        }
+        .ribbon_3 {
+            border-bottom: 3px solid #E66641;
+            top: 125px;
+            left: 65px;
+            width: 150px;
+        }
+        .ribbon {
+            position: absolute;
+            height: 130px;
+            border-radius: 10000px;
+            z-index: 99;
+        }
     }
     .gift {
         @for $i from 1 through 3 {
@@ -76,6 +100,8 @@
                     height: 50px;
                     width: 60px;
                     background-color: rgb(143, 23, 33);
+                    z-index: 1;
+   
                 }
                 .cover {
                     position: absolute;
@@ -84,6 +110,7 @@
                     height: 15px;
                     width: 65px;
                     background-color: rgb(93, 15, 22);
+                    z-index: 2;
                 }
                 .bowknot {
                     position: absolute;
@@ -92,6 +119,7 @@
                     height: 50px;
                     width: 10px;
                     background-color: $writh;
+                    z-index: 99;
                 }
             }
         }
