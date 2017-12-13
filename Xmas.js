@@ -17,8 +17,11 @@ $(document).ready(function () {
 
   var $Xms_2 = $(".XmasCard_2"),
     $gift_1 = $(".gift_1"),
-    $cover = $(".gift_1 .cover"),
-    $bowknot = $(".gift_1 .bowknot");
+    $cover_1 = $(".gift_1 .cover"),
+    $bowknot_1 = $(".gift_1 .bowknot"),
+    $gift_2 = $(".gift_3"),
+    $cover_2 = $(".gift_3 .cover"),
+    $bowknot_2 = $(".gift_3 .bowknot");
 
   var $gift_cover_open = "cover_open",
     $gift_bowknot_open = "bowknot_open",
@@ -28,19 +31,30 @@ $(document).ready(function () {
     $bowknot_st = "bowknot_st";
 
   var flag1 = false,
-      flag2 = false;
+    flag2 = false;
   $gift_1.click(function () {
     if (flag1 == false) {
-      $cover.addClass($gift_cover_open).removeClass($gift_cover_close);
-      $bowknot.addClass($gift_bowknot_open).removeClass($gift_bowknot_close);
+      $cover_1.addClass($gift_cover_open).removeClass($gift_cover_close);
+      $bowknot_1.addClass($gift_bowknot_open).removeClass($gift_bowknot_close);
       flag1 = true;
-    }else{
-       $cover.addClass($gift_cover_close).removeClass($gift_cover_open);
-       $bowknot.addClass($gift_bowknot_close).removeClass($gift_bowknot_open);
+    } else {
+      $cover_1.addClass($gift_cover_close).removeClass($gift_cover_open);
+      $bowknot_1.addClass($gift_bowknot_close).removeClass($gift_bowknot_open);
       flag1 = false;
     }
-    
-  })
 
+  })
+  $gift_2.click(function () {
+    if (flag2 == false) {
+      $cover_2.addClass($gift_cover_open).removeClass($gift_cover_close);
+      $bowknot_2.addClass($gift_bowknot_open).removeClass($gift_bowknot_close);
+      flag2 = true;
+    } else {
+      $cover_2.addClass($gift_cover_close).removeClass($gift_cover_open);
+      $bowknot_2.addClass($gift_bowknot_close).removeClass($gift_bowknot_open);
+      flag2 = false;
+    }
+
+  })
 
 })

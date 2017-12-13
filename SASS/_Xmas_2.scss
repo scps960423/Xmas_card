@@ -138,10 +138,10 @@
                     transform: rotate(35deg);
                 }
                 .cover_close {
-                    animation: close_gitf_cover 0.5s linear  forwards;
-                    -moz-animation: close_gitf_cover 0.5s linear  forwards;
-                    -webkit-animation: close_gitf_cover 0.5s linear  forwards;
-                    -o-animation: close_gitf_cover 0.5s linear  forwards;
+                    animation: close_gitf_cover 0.5s linear forwards;
+                    -moz-animation: close_gitf_cover 0.5s linear forwards;
+                    -webkit-animation: close_gitf_cover 0.5s linear forwards;
+                    -o-animation: close_gitf_cover 0.5s linear forwards;
                 }
                 .cover_open {
                     animation: open_gitf_cover 0.5s linear 1s forwards;
@@ -178,6 +178,19 @@
                     -o-transform: rotate(-90deg);
                     -ms-transform: rotate(-90deg);
                     transform: rotate(-90deg);
+                }
+                .ball {
+                    position: absolute;
+                    height: 25px;
+                    width: 25px;
+                    background-color: rgb(154, 240, 248);
+                    border-radius: 30px;
+                    top: 0;
+                    left: 0px;
+                    animation: ball_open 0.75s linear forwards;
+                    -moz-animation: ball_open 0.75s linear forwards;
+                    -webkit-animation: ball_open 0.75s linear forwards;
+                    -o-animation: ball_open 0.75s linear forwards;
                 }
             }
         }

@@ -144,3 +144,54 @@
         transform: rotate(0deg);
     }
 }
+
+@keyframes ball_open {
+    0% {
+        top: 0;
+        left: 15px;
+    }
+    10% {
+        top: -20px;
+        left: 30px;
+    }
+    20% {
+        top: -35px;
+        left: 35px;
+    }
+    30% {
+        top: -45px;
+        left: 40px;
+    }
+    40% {
+        top: -50px;
+        left: 45px;
+    }
+    50% {
+        top: -45px;
+        left: 50px;
+    }
+    60% {
+        top: -35px;
+        left: 60px;
+    }
+    70% {
+        top: -20px;
+        left: 65px;
+    }
+    75% {
+        top: 0px;
+        left: 75px;
+    }
+    80% {
+        top: 25px;
+        left: 85px;
+    }
+    90% {
+        top: 0px;
+        left: 90px;
+    }
+    100% {
+        top: 25px;
+        left: 95px;
+    }
+}

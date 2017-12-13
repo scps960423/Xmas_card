@@ -141,6 +141,56 @@
     transform: rotate(0deg);
   }
 }
+@keyframes ball_open {
+  0% {
+    top: 0;
+    left: 15px;
+  }
+  10% {
+    top: -20px;
+    left: 30px;
+  }
+  20% {
+    top: -35px;
+    left: 35px;
+  }
+  30% {
+    top: -45px;
+    left: 40px;
+  }
+  40% {
+    top: -50px;
+    left: 45px;
+  }
+  50% {
+    top: -45px;
+    left: 50px;
+  }
+  60% {
+    top: -35px;
+    left: 60px;
+  }
+  70% {
+    top: -20px;
+    left: 65px;
+  }
+  75% {
+    top: 0px;
+    left: 75px;
+  }
+  80% {
+    top: 25px;
+    left: 85px;
+  }
+  90% {
+    top: 0px;
+    left: 90px;
+  }
+  100% {
+    top: 25px;
+    left: 95px;
+  }
+}
 /* line 1, ../sass/_function.scss */
 .XmasCard_1 ul .day {
   -webkit-transition: all .25s ease-in;
@@ -282,6 +332,56 @@
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+@keyframes ball_open {
+  0% {
+    top: 0;
+    left: 15px;
+  }
+  10% {
+    top: -20px;
+    left: 30px;
+  }
+  20% {
+    top: -35px;
+    left: 35px;
+  }
+  30% {
+    top: -45px;
+    left: 40px;
+  }
+  40% {
+    top: -50px;
+    left: 45px;
+  }
+  50% {
+    top: -45px;
+    left: 50px;
+  }
+  60% {
+    top: -35px;
+    left: 60px;
+  }
+  70% {
+    top: -20px;
+    left: 65px;
+  }
+  75% {
+    top: 0px;
+    left: 75px;
+  }
+  80% {
+    top: 25px;
+    left: 85px;
+  }
+  90% {
+    top: 0px;
+    left: 90px;
+  }
+  100% {
+    top: 25px;
+    left: 95px;
   }
 }
 /* line 2, ../sass/_Xmas_2.scss */
@@ -475,10 +575,10 @@
 }
 /* line 140, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .cover_close {
-  animation: close_gitf_cover 0.5s linear  forwards;
-  -moz-animation: close_gitf_cover 0.5s linear  forwards;
-  -webkit-animation: close_gitf_cover 0.5s linear  forwards;
-  -o-animation: close_gitf_cover 0.5s linear  forwards;
+  animation: close_gitf_cover 0.5s linear forwards;
+  -moz-animation: close_gitf_cover 0.5s linear forwards;
+  -webkit-animation: close_gitf_cover 0.5s linear forwards;
+  -o-animation: close_gitf_cover 0.5s linear forwards;
 }
 /* line 146, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .cover_open {
@@ -521,6 +621,20 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+/* line 182, ../sass/_Xmas_2.scss */
+.XmasCard_2 .gift .gift_1 .ball {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #9af0f8;
+  border-radius: 30px;
+  top: 0;
+  left: 0px;
+  animation: ball_open 0.75s linear forwards;
+  -moz-animation: ball_open 0.75s linear forwards;
+  -webkit-animation: ball_open 0.75s linear forwards;
+  -o-animation: ball_open 0.75s linear forwards;
+}
 /* line 100, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 {
   position: relative;
@@ -558,10 +672,10 @@
 }
 /* line 140, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .cover_close {
-  animation: close_gitf_cover 0.5s linear  forwards;
-  -moz-animation: close_gitf_cover 0.5s linear  forwards;
-  -webkit-animation: close_gitf_cover 0.5s linear  forwards;
-  -o-animation: close_gitf_cover 0.5s linear  forwards;
+  animation: close_gitf_cover 0.5s linear forwards;
+  -moz-animation: close_gitf_cover 0.5s linear forwards;
+  -webkit-animation: close_gitf_cover 0.5s linear forwards;
+  -o-animation: close_gitf_cover 0.5s linear forwards;
 }
 /* line 146, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .cover_open {
@@ -604,6 +718,20 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+/* line 182, ../sass/_Xmas_2.scss */
+.XmasCard_2 .gift .gift_2 .ball {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #9af0f8;
+  border-radius: 30px;
+  top: 0;
+  left: 0px;
+  animation: ball_open 0.75s linear forwards;
+  -moz-animation: ball_open 0.75s linear forwards;
+  -webkit-animation: ball_open 0.75s linear forwards;
+  -o-animation: ball_open 0.75s linear forwards;
+}
 /* line 100, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 {
   position: relative;
@@ -640,10 +768,10 @@
 }
 /* line 140, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .cover_close {
-  animation: close_gitf_cover 0.5s linear  forwards;
-  -moz-animation: close_gitf_cover 0.5s linear  forwards;
-  -webkit-animation: close_gitf_cover 0.5s linear  forwards;
-  -o-animation: close_gitf_cover 0.5s linear  forwards;
+  animation: close_gitf_cover 0.5s linear forwards;
+  -moz-animation: close_gitf_cover 0.5s linear forwards;
+  -webkit-animation: close_gitf_cover 0.5s linear forwards;
+  -o-animation: close_gitf_cover 0.5s linear forwards;
 }
 /* line 146, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .cover_open {
@@ -685,6 +813,20 @@
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+/* line 182, ../sass/_Xmas_2.scss */
+.XmasCard_2 .gift .gift_3 .ball {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #9af0f8;
+  border-radius: 30px;
+  top: 0;
+  left: 0px;
+  animation: ball_open 0.75s linear forwards;
+  -moz-animation: ball_open 0.75s linear forwards;
+  -webkit-animation: ball_open 0.75s linear forwards;
+  -o-animation: ball_open 0.75s linear forwards;
 }
 
 /* line 1, ../sass/_function.scss */
@@ -828,6 +970,56 @@
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+@keyframes ball_open {
+  0% {
+    top: 0;
+    left: 15px;
+  }
+  10% {
+    top: -20px;
+    left: 30px;
+  }
+  20% {
+    top: -35px;
+    left: 35px;
+  }
+  30% {
+    top: -45px;
+    left: 40px;
+  }
+  40% {
+    top: -50px;
+    left: 45px;
+  }
+  50% {
+    top: -45px;
+    left: 50px;
+  }
+  60% {
+    top: -35px;
+    left: 60px;
+  }
+  70% {
+    top: -20px;
+    left: 65px;
+  }
+  75% {
+    top: 0px;
+    left: 75px;
+  }
+  80% {
+    top: 25px;
+    left: 85px;
+  }
+  90% {
+    top: 0px;
+    left: 90px;
+  }
+  100% {
+    top: 25px;
+    left: 95px;
   }
 }
 /* line 2, ../sass/_Xmas_1.scss */
