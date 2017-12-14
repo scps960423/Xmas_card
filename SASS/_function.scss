@@ -292,3 +292,62 @@
         top: 0px;
     }
 }
+
+@-moz-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 400px 1000px, 200px 400px, 100px 300px;
+    }
+}
+
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+
+@-ms-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+
+@keyframes Xmas_text {
+    0% { 
+        transform-origin: top;
+        transform: rotate(-3deg);
+    }
+    25% {
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    50% {
+        transform-origin: top;
+        transform: rotate(3deg);
+    }
+    75% {
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: top;
+        transform: rotate(-3deg);
+    }
+}

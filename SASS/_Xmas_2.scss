@@ -29,7 +29,7 @@
             background-color: #4D3900;
             top: 250px;
             left: 100px;
-            z-index: 1;
+            z-index: 2;
         }
         .border {
             position: absolute;
@@ -101,11 +101,11 @@
                 position: relative;
                 @if $i==1 {
                     top: 320px;
-                    z-index: 1;
+                    z-index: 99;
                 }
                 @else if $i==2 {
                     top: 280px;
-                    z-index: 0;
+                    z-index: 1;
                 }
                 @else if $i==3 {
                     top: 300px;
@@ -156,7 +156,7 @@
                     left: 23px;
                     height: 50px;
                     width: 10px;
-                    background-color: $writh;
+                    background-color: #ffdfa2;
                     z-index: 99;
                 }
                 .bowknot_st {
@@ -256,4 +256,53 @@
             -o-animation: tsmc_close 0.5s linear 0.5s forwards;
         }
     }
+}
+
+.snow_flood {
+    position: absolute;
+    height: 80px;
+    width: 800px;
+    background-color: $writh;
+    bottom: 0;
+    z-index: 0;
+}
+
+.snow {
+    background: none;
+    font-family: Androgyne;
+    background-image: url('../Images/s1.png'), url('../Images/s2.png'), url('../Images/s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+
+.Xmas2_text {
+  position: absolute;
+  right: 100px;
+    background: url('../Images/Xmas_text2.png') no-repeat;
+    width: 200px;
+    height: 290px;
+    -webkit-animation: Xmas_text 5s linear infinite;
+    -moz-animation: Xmas_text 5s linear infinite;
+    -ms-animation: Xmas_text 5s linear infinite;
+    animation: Xmas_text 5s linear infinite;
 }
