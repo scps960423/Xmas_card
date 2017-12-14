@@ -1,6 +1,6 @@
 @import 'sys';
 .XmasCard_2 {
-    background-color: $bg_color_2;
+    background: -webkit-linear-gradient(#3F51B5, #f1bfbf);
     .tree {
         left: 100px;
         width: 100px;
@@ -93,6 +93,10 @@
             top: 10px;
             left: 100px;
             z-index: 100;
+            -webkit-animation: star 1s linear infinite;
+            -moz-animation: star 1s linear infinite;
+            -ms-animation: star 1s linear infinite;
+            animation: star 1s linear infinite;
         }
     }
     .gift {
@@ -296,8 +300,8 @@
 }
 
 .Xmas2_text {
-  position: absolute;
-  right: 100px;
+    position: absolute;
+    right: 100px;
     background: url('../Images/Xmas_text2.png') no-repeat;
     width: 200px;
     height: 290px;
