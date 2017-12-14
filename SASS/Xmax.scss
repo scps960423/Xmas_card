@@ -2,11 +2,21 @@
 @import 'Xmas_2';
 @import 'Xmas_1';
 .Xmas {
-    //  display: none;
     position: relative;
     height: 400px;
     width: 800px;
 }
+
+.XmasCard_1 {
+    display: none;
+}
+
+.XmasCard_2 {
+    display: none;
+}
+
 img {
     display: block;
+    width: 800px;
+    height: 400px;
 }

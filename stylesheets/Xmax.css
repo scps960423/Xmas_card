@@ -1,4 +1,4 @@
-/* line 1, ../sass/_function.scss */
+/* line 2, ../sass/_function.scss */
 .XmasCard_1 ul .day {
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
@@ -355,7 +355,116 @@
     transform: rotate(-3deg);
   }
 }
-/* line 1, ../sass/_function.scss */
+@keyframes sled {
+  0% {
+    top: 260px;
+    left: 810px;
+    width: 0px;
+  }
+  5% {
+    top: 259px;
+    left: 790px;
+    width: 10px;
+  }
+  6% {
+    top: 258px;
+    left: 770px;
+    width: 30px;
+  }
+  7% {
+    top: 257px;
+    left: 740px;
+    width: 60px;
+  }
+  8% {
+    top: 256px;
+    left: 730px;
+    width: 70px;
+  }
+  9% {
+    top: 255px;
+    left: 720px;
+    width: 80px;
+  }
+  10% {
+    top: 254px;
+    left: 710px;
+    width: 90px;
+  }
+  11% {
+    top: 253px;
+    left: 700px;
+    width: 100px;
+  }
+  12% {
+    top: 253px;
+    left: 690px;
+    width: 110px;
+  }
+  13% {
+    top: 252px;
+    left: 680px;
+    width: 120px;
+  }
+  14% {
+    top: 251px;
+    left: 670px;
+    width: 130px;
+  }
+  15% {
+    top: 250px;
+    left: 660px;
+    width: 140px;
+  }
+  16% {
+    top: 249px;
+    left: 650px;
+    width: 150px;
+  }
+  17% {
+    top: 248px;
+    left: 640px;
+    width: 160px;
+  }
+  18% {
+    top: 247px;
+    left: 630px;
+    width: 170px;
+  }
+  19% {
+    top: 246px;
+    left: 620px;
+    width: 180px;
+  }
+  19% {
+    top: 245px;
+    left: 610px;
+    width: 190px;
+  }
+  20% {
+    top: 244px;
+    left: 600px;
+    width: 202px;
+  }
+  21% {
+    top: 243px;
+    left: 600px;
+  }
+  50% {
+    top: 0px;
+    left: 100px;
+    width: 202px;
+  }
+  70% {
+    top: 0px;
+    left: 50px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+/* line 2, ../sass/_function.scss */
 .XmasCard_1 ul .day {
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
@@ -710,6 +819,115 @@
   }
   100% {
     transform: rotate(-3deg);
+  }
+}
+@keyframes sled {
+  0% {
+    top: 260px;
+    left: 810px;
+    width: 0px;
+  }
+  5% {
+    top: 259px;
+    left: 790px;
+    width: 10px;
+  }
+  6% {
+    top: 258px;
+    left: 770px;
+    width: 30px;
+  }
+  7% {
+    top: 257px;
+    left: 740px;
+    width: 60px;
+  }
+  8% {
+    top: 256px;
+    left: 730px;
+    width: 70px;
+  }
+  9% {
+    top: 255px;
+    left: 720px;
+    width: 80px;
+  }
+  10% {
+    top: 254px;
+    left: 710px;
+    width: 90px;
+  }
+  11% {
+    top: 253px;
+    left: 700px;
+    width: 100px;
+  }
+  12% {
+    top: 253px;
+    left: 690px;
+    width: 110px;
+  }
+  13% {
+    top: 252px;
+    left: 680px;
+    width: 120px;
+  }
+  14% {
+    top: 251px;
+    left: 670px;
+    width: 130px;
+  }
+  15% {
+    top: 250px;
+    left: 660px;
+    width: 140px;
+  }
+  16% {
+    top: 249px;
+    left: 650px;
+    width: 150px;
+  }
+  17% {
+    top: 248px;
+    left: 640px;
+    width: 160px;
+  }
+  18% {
+    top: 247px;
+    left: 630px;
+    width: 170px;
+  }
+  19% {
+    top: 246px;
+    left: 620px;
+    width: 180px;
+  }
+  19% {
+    top: 245px;
+    left: 610px;
+    width: 190px;
+  }
+  20% {
+    top: 244px;
+    left: 600px;
+    width: 202px;
+  }
+  21% {
+    top: 243px;
+    left: 600px;
+  }
+  50% {
+    top: 0px;
+    left: 100px;
+    width: 202px;
+  }
+  70% {
+    top: 0px;
+    left: 50px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
   }
 }
 /* line 2, ../sass/_Xmas_2.scss */
@@ -865,19 +1083,16 @@
   top: 10px;
   left: 100px;
   z-index: 100;
-  -webkit-animation: star 1s linear infinite;
-  -moz-animation: star 1s linear infinite;
-  -ms-animation: star 1s linear infinite;
-  animation: star 1s linear infinite;
 }
-/* line 104, ../sass/_Xmas_2.scss */
+/* line 100, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 {
   position: relative;
+  cursor: pointer;
   top: 320px;
   z-index: 99;
   left: 55px;
 }
-/* line 120, ../sass/_Xmas_2.scss */
+/* line 118, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .box {
   position: absolute;
   height: 50px;
@@ -885,7 +1100,7 @@
   background-color: #8f1721;
   z-index: 2;
 }
-/* line 127, ../sass/_Xmas_2.scss */
+/* line 125, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .cover {
   position: absolute;
   top: 0;
@@ -895,7 +1110,7 @@
   background-color: #5d0f16;
   z-index: 3;
 }
-/* line 136, ../sass/_Xmas_2.scss */
+/* line 134, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .cover_st {
   top: 10px;
   left: 40px;
@@ -905,21 +1120,21 @@
   -ms-transform: rotate(35deg);
   transform: rotate(35deg);
 }
-/* line 145, ../sass/_Xmas_2.scss */
+/* line 143, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .cover_close {
   animation: close_gitf_cover 0.5s linear 1s forwards;
   -moz-animation: close_gitf_cover 0.5s linear 1s forwards;
   -webkit-animation: close_gitf_cover 0.5s linear 1s forwards;
   -o-animation: close_gitf_cover 0.5s linear 1s forwards;
 }
-/* line 151, ../sass/_Xmas_2.scss */
+/* line 149, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .cover_open {
   animation: open_gitf_cover 0.5s linear 1s forwards;
   -moz-animation: open_gitf_cover 0.5s linear 1s forwards;
   -webkit-animation: open_gitf_cover 0.5s linear 1s forwards;
   -o-animation: open_gitf_cover 0.5s linear 1s forwards;
 }
-/* line 157, ../sass/_Xmas_2.scss */
+/* line 155, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .bowknot {
   position: absolute;
   top: 0;
@@ -929,7 +1144,7 @@
   background-color: #ffdfa2;
   z-index: 99;
 }
-/* line 166, ../sass/_Xmas_2.scss */
+/* line 164, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .bowknot_st {
   top: 20px;
   left: 10px;
@@ -939,21 +1154,21 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 175, ../sass/_Xmas_2.scss */
+/* line 173, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .bowknot_open {
   animation: open_gitf_bowknot 0.75s linear forwards;
   -moz-animation: open_gitf_bowknot 0.75s linear forwards;
   -webkit-animation: open_gitf_bowknot 0.75s linear forwards;
   -o-animation: open_gitf_bowknot 0.75s linear forwards;
 }
-/* line 181, ../sass/_Xmas_2.scss */
+/* line 179, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .bowknot_close {
   animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -moz-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -webkit-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -o-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
 }
-/* line 187, ../sass/_Xmas_2.scss */
+/* line 185, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .ball {
   position: absolute;
   height: 25px;
@@ -965,53 +1180,53 @@
   z-index: 1;
   box-shadow: 2px 3px #60b3bb;
 }
-/* line 198, ../sass/_Xmas_2.scss */
+/* line 196, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .ball_open {
   animation: ball_open 0.75s linear forwards;
   -moz-animation: ball_open 0.75s linear 1.5s forwards;
   -webkit-animation: ball_open 0.75s linear 1.5s forwards;
   -o-animation: ball_open 0.75s linear 1.5s forwards;
 }
-/* line 204, ../sass/_Xmas_2.scss */
+/* line 202, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .ball_close {
   animation: ball_close 0.5s linear forwards;
   -moz-animation: ball_close 0.5s linear forwards;
   -webkit-animation: ball_close 0.5s linear forwards;
   -o-animation: ball_close 0.5s linear forwards;
 }
-/* line 210, ../sass/_Xmas_2.scss */
+/* line 208, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .doll {
   background: url("../Images/rabbit.png");
   width: 50px;
   position: absolute;
 }
-/* line 216, ../sass/_Xmas_2.scss */
+/* line 214, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .doll_st {
   top: -50px;
   height: 70px;
 }
-/* line 220, ../sass/_Xmas_2.scss */
+/* line 218, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .doll_open {
   animation: doll_open 0.5s linear 1.5s forwards;
   -moz-animation: doll_open 0.5s linear 1.5s forwards;
   -webkit-animation: doll_open 0.5s linear 1.5s forwards;
   -o-animation: doll_open 0.5s linear 1.5s forwards;
 }
-/* line 226, ../sass/_Xmas_2.scss */
+/* line 224, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_1 .doll_close {
   animation: doll_close 0.5s linear 0.5s forwards;
   -moz-animation: doll_close 0.5s linear 0.5s forwards;
   -webkit-animation: doll_close 0.5s linear 0.5s forwards;
   -o-animation: doll_close 0.5s linear 0.5s forwards;
 }
-/* line 104, ../sass/_Xmas_2.scss */
+/* line 100, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 {
   position: relative;
   top: 280px;
   z-index: 1;
   left: 155px;
 }
-/* line 120, ../sass/_Xmas_2.scss */
+/* line 118, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .box {
   position: absolute;
   height: 50px;
@@ -1019,7 +1234,7 @@
   background-color: #8f1721;
   z-index: 2;
 }
-/* line 127, ../sass/_Xmas_2.scss */
+/* line 125, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .cover {
   position: absolute;
   top: 0;
@@ -1029,7 +1244,7 @@
   background-color: #5d0f16;
   z-index: 3;
 }
-/* line 136, ../sass/_Xmas_2.scss */
+/* line 134, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .cover_st {
   top: 10px;
   left: 40px;
@@ -1039,21 +1254,21 @@
   -ms-transform: rotate(35deg);
   transform: rotate(35deg);
 }
-/* line 145, ../sass/_Xmas_2.scss */
+/* line 143, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .cover_close {
   animation: close_gitf_cover 0.5s linear 1s forwards;
   -moz-animation: close_gitf_cover 0.5s linear 1s forwards;
   -webkit-animation: close_gitf_cover 0.5s linear 1s forwards;
   -o-animation: close_gitf_cover 0.5s linear 1s forwards;
 }
-/* line 151, ../sass/_Xmas_2.scss */
+/* line 149, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .cover_open {
   animation: open_gitf_cover 0.5s linear 1s forwards;
   -moz-animation: open_gitf_cover 0.5s linear 1s forwards;
   -webkit-animation: open_gitf_cover 0.5s linear 1s forwards;
   -o-animation: open_gitf_cover 0.5s linear 1s forwards;
 }
-/* line 157, ../sass/_Xmas_2.scss */
+/* line 155, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .bowknot {
   position: absolute;
   top: 0;
@@ -1063,7 +1278,7 @@
   background-color: #ffdfa2;
   z-index: 99;
 }
-/* line 166, ../sass/_Xmas_2.scss */
+/* line 164, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .bowknot_st {
   top: 20px;
   left: 10px;
@@ -1073,21 +1288,21 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 175, ../sass/_Xmas_2.scss */
+/* line 173, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .bowknot_open {
   animation: open_gitf_bowknot 0.75s linear forwards;
   -moz-animation: open_gitf_bowknot 0.75s linear forwards;
   -webkit-animation: open_gitf_bowknot 0.75s linear forwards;
   -o-animation: open_gitf_bowknot 0.75s linear forwards;
 }
-/* line 181, ../sass/_Xmas_2.scss */
+/* line 179, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .bowknot_close {
   animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -moz-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -webkit-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -o-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
 }
-/* line 187, ../sass/_Xmas_2.scss */
+/* line 185, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .ball {
   position: absolute;
   height: 25px;
@@ -1099,53 +1314,54 @@
   z-index: 1;
   box-shadow: 2px 3px #60b3bb;
 }
-/* line 198, ../sass/_Xmas_2.scss */
+/* line 196, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .ball_open {
   animation: ball_open 0.75s linear forwards;
   -moz-animation: ball_open 0.75s linear 1.5s forwards;
   -webkit-animation: ball_open 0.75s linear 1.5s forwards;
   -o-animation: ball_open 0.75s linear 1.5s forwards;
 }
-/* line 204, ../sass/_Xmas_2.scss */
+/* line 202, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .ball_close {
   animation: ball_close 0.5s linear forwards;
   -moz-animation: ball_close 0.5s linear forwards;
   -webkit-animation: ball_close 0.5s linear forwards;
   -o-animation: ball_close 0.5s linear forwards;
 }
-/* line 210, ../sass/_Xmas_2.scss */
+/* line 208, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .doll {
   background: url("../Images/rabbit.png");
   width: 50px;
   position: absolute;
 }
-/* line 216, ../sass/_Xmas_2.scss */
+/* line 214, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .doll_st {
   top: -50px;
   height: 70px;
 }
-/* line 220, ../sass/_Xmas_2.scss */
+/* line 218, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .doll_open {
   animation: doll_open 0.5s linear 1.5s forwards;
   -moz-animation: doll_open 0.5s linear 1.5s forwards;
   -webkit-animation: doll_open 0.5s linear 1.5s forwards;
   -o-animation: doll_open 0.5s linear 1.5s forwards;
 }
-/* line 226, ../sass/_Xmas_2.scss */
+/* line 224, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_2 .doll_close {
   animation: doll_close 0.5s linear 0.5s forwards;
   -moz-animation: doll_close 0.5s linear 0.5s forwards;
   -webkit-animation: doll_close 0.5s linear 0.5s forwards;
   -o-animation: doll_close 0.5s linear 0.5s forwards;
 }
-/* line 104, ../sass/_Xmas_2.scss */
+/* line 100, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 {
   position: relative;
+  cursor: pointer;
   top: 300px;
   left: 300px !important;
   left: 255px;
 }
-/* line 120, ../sass/_Xmas_2.scss */
+/* line 118, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .box {
   position: absolute;
   height: 50px;
@@ -1153,7 +1369,7 @@
   background-color: #8f1721;
   z-index: 2;
 }
-/* line 127, ../sass/_Xmas_2.scss */
+/* line 125, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .cover {
   position: absolute;
   top: 0;
@@ -1163,7 +1379,7 @@
   background-color: #5d0f16;
   z-index: 3;
 }
-/* line 136, ../sass/_Xmas_2.scss */
+/* line 134, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .cover_st {
   top: 10px;
   left: 40px;
@@ -1173,21 +1389,21 @@
   -ms-transform: rotate(35deg);
   transform: rotate(35deg);
 }
-/* line 145, ../sass/_Xmas_2.scss */
+/* line 143, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .cover_close {
   animation: close_gitf_cover 0.5s linear 1s forwards;
   -moz-animation: close_gitf_cover 0.5s linear 1s forwards;
   -webkit-animation: close_gitf_cover 0.5s linear 1s forwards;
   -o-animation: close_gitf_cover 0.5s linear 1s forwards;
 }
-/* line 151, ../sass/_Xmas_2.scss */
+/* line 149, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .cover_open {
   animation: open_gitf_cover 0.5s linear 1s forwards;
   -moz-animation: open_gitf_cover 0.5s linear 1s forwards;
   -webkit-animation: open_gitf_cover 0.5s linear 1s forwards;
   -o-animation: open_gitf_cover 0.5s linear 1s forwards;
 }
-/* line 157, ../sass/_Xmas_2.scss */
+/* line 155, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .bowknot {
   position: absolute;
   top: 0;
@@ -1197,7 +1413,7 @@
   background-color: #ffdfa2;
   z-index: 99;
 }
-/* line 166, ../sass/_Xmas_2.scss */
+/* line 164, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .bowknot_st {
   top: 20px;
   left: 10px;
@@ -1207,21 +1423,21 @@
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 175, ../sass/_Xmas_2.scss */
+/* line 173, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .bowknot_open {
   animation: open_gitf_bowknot 0.75s linear forwards;
   -moz-animation: open_gitf_bowknot 0.75s linear forwards;
   -webkit-animation: open_gitf_bowknot 0.75s linear forwards;
   -o-animation: open_gitf_bowknot 0.75s linear forwards;
 }
-/* line 181, ../sass/_Xmas_2.scss */
+/* line 179, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .bowknot_close {
   animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -moz-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -webkit-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
   -o-animation: close_gitf_bowknot 0.75s linear 1.5s forwards;
 }
-/* line 187, ../sass/_Xmas_2.scss */
+/* line 185, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .ball {
   position: absolute;
   height: 25px;
@@ -1233,46 +1449,46 @@
   z-index: 1;
   box-shadow: 2px 3px #60b3bb;
 }
-/* line 198, ../sass/_Xmas_2.scss */
+/* line 196, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .ball_open {
   animation: ball_open 0.75s linear forwards;
   -moz-animation: ball_open 0.75s linear 1.5s forwards;
   -webkit-animation: ball_open 0.75s linear 1.5s forwards;
   -o-animation: ball_open 0.75s linear 1.5s forwards;
 }
-/* line 204, ../sass/_Xmas_2.scss */
+/* line 202, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .ball_close {
   animation: ball_close 0.5s linear forwards;
   -moz-animation: ball_close 0.5s linear forwards;
   -webkit-animation: ball_close 0.5s linear forwards;
   -o-animation: ball_close 0.5s linear forwards;
 }
-/* line 210, ../sass/_Xmas_2.scss */
+/* line 208, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .doll {
   background: url("../Images/rabbit.png");
   width: 50px;
   position: absolute;
 }
-/* line 216, ../sass/_Xmas_2.scss */
+/* line 214, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .doll_st {
   top: -50px;
   height: 70px;
 }
-/* line 220, ../sass/_Xmas_2.scss */
+/* line 218, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .doll_open {
   animation: doll_open 0.5s linear 1.5s forwards;
   -moz-animation: doll_open 0.5s linear 1.5s forwards;
   -webkit-animation: doll_open 0.5s linear 1.5s forwards;
   -o-animation: doll_open 0.5s linear 1.5s forwards;
 }
-/* line 226, ../sass/_Xmas_2.scss */
+/* line 224, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .gift_3 .doll_close {
   animation: doll_close 0.5s linear 0.5s forwards;
   -moz-animation: doll_close 0.5s linear 0.5s forwards;
   -webkit-animation: doll_close 0.5s linear 0.5s forwards;
   -o-animation: doll_close 0.5s linear 0.5s forwards;
 }
-/* line 234, ../sass/_Xmas_2.scss */
+/* line 232, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .tsmc_bor {
   position: absolute;
   background-color: #F44336;
@@ -1286,18 +1502,18 @@
   -webkit-box-shadow: 0px 3px #a22a21;
   box-shadow: 0px 3px #a22a21;
 }
-/* line 247, ../sass/_Xmas_2.scss */
+/* line 245, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .tsmc_bor_st {
   top: -50px;
 }
-/* line 250, ../sass/_Xmas_2.scss */
+/* line 248, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .tsmc_bor_open {
   animation: tsmc_open 0.5s linear 1.5s forwards;
   -moz-animation: tsmc_open 0.5s linear 1.5s forwards;
   -webkit-animation: tsmc_open 0.5s linear 1.5s forwards;
   -o-animation: tsmc_open 0.5s linear 1.5s forwards;
 }
-/* line 256, ../sass/_Xmas_2.scss */
+/* line 254, ../sass/_Xmas_2.scss */
 .XmasCard_2 .gift .tsmc_bor_close {
   animation: tsmc_close 0.5s linear 0.5s forwards;
   -moz-animation: tsmc_close 0.5s linear 0.5s forwards;
@@ -1305,7 +1521,7 @@
   -o-animation: tsmc_close 0.5s linear 0.5s forwards;
 }
 
-/* line 265, ../sass/_Xmas_2.scss */
+/* line 263, ../sass/_Xmas_2.scss */
 .snow_flood {
   position: absolute;
   height: 80px;
@@ -1315,7 +1531,7 @@
   z-index: 0;
 }
 
-/* line 274, ../sass/_Xmas_2.scss */
+/* line 272, ../sass/_Xmas_2.scss */
 .snow {
   background: none;
   font-family: Androgyne;
@@ -1343,7 +1559,7 @@
     background-position: 500px 1000px, 200px 400px, -100px 300px;
   }
 }
-/* line 302, ../sass/_Xmas_2.scss */
+/* line 300, ../sass/_Xmas_2.scss */
 .Xmas2_text {
   position: absolute;
   right: 100px;
@@ -1354,9 +1570,32 @@
   -moz-animation: Xmas_text 5s linear infinite;
   -ms-animation: Xmas_text 5s linear infinite;
   animation: Xmas_text 5s linear infinite;
+  cursor: pointer;
+  z-index: 1;
 }
 
-/* line 1, ../sass/_function.scss */
+/* line 314, ../sass/_Xmas_2.scss */
+.sled {
+  position: absolute;
+  background: url("../Images/sled.png");
+  height: 72px;
+  width: 202px;
+}
+
+/* line 324, ../sass/_Xmas_2.scss */
+.sled_run {
+  -webkit-animation: sled 10s linear forwards;
+  -moz-animation: sled 10s linear forwards;
+  -ms-animation: sled 10s linear forwards;
+  animation: sled 10s linear forwards;
+}
+
+/* line 331, ../sass/_Xmas_2.scss */
+body {
+  background-color: #343434;
+}
+
+/* line 2, ../sass/_function.scss */
 .XmasCard_1 ul .day {
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
@@ -1711,6 +1950,115 @@
   }
   100% {
     transform: rotate(-3deg);
+  }
+}
+@keyframes sled {
+  0% {
+    top: 260px;
+    left: 810px;
+    width: 0px;
+  }
+  5% {
+    top: 259px;
+    left: 790px;
+    width: 10px;
+  }
+  6% {
+    top: 258px;
+    left: 770px;
+    width: 30px;
+  }
+  7% {
+    top: 257px;
+    left: 740px;
+    width: 60px;
+  }
+  8% {
+    top: 256px;
+    left: 730px;
+    width: 70px;
+  }
+  9% {
+    top: 255px;
+    left: 720px;
+    width: 80px;
+  }
+  10% {
+    top: 254px;
+    left: 710px;
+    width: 90px;
+  }
+  11% {
+    top: 253px;
+    left: 700px;
+    width: 100px;
+  }
+  12% {
+    top: 253px;
+    left: 690px;
+    width: 110px;
+  }
+  13% {
+    top: 252px;
+    left: 680px;
+    width: 120px;
+  }
+  14% {
+    top: 251px;
+    left: 670px;
+    width: 130px;
+  }
+  15% {
+    top: 250px;
+    left: 660px;
+    width: 140px;
+  }
+  16% {
+    top: 249px;
+    left: 650px;
+    width: 150px;
+  }
+  17% {
+    top: 248px;
+    left: 640px;
+    width: 160px;
+  }
+  18% {
+    top: 247px;
+    left: 630px;
+    width: 170px;
+  }
+  19% {
+    top: 246px;
+    left: 620px;
+    width: 180px;
+  }
+  19% {
+    top: 245px;
+    left: 610px;
+    width: 190px;
+  }
+  20% {
+    top: 244px;
+    left: 600px;
+    width: 202px;
+  }
+  21% {
+    top: 243px;
+    left: 600px;
+  }
+  50% {
+    top: 0px;
+    left: 100px;
+    width: 202px;
+  }
+  70% {
+    top: 0px;
+    left: 50px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
   }
 }
 /* line 2, ../sass/_Xmas_1.scss */
@@ -2170,6 +2518,18 @@
 }
 
 /* line 10, ../sass/Xmax.scss */
+.XmasCard_1 {
+  display: none;
+}
+
+/* line 14, ../sass/Xmax.scss */
+.XmasCard_2 {
+  display: none;
+}
+
+/* line 18, ../sass/Xmax.scss */
 img {
   display: block;
+  width: 800px;
+  height: 400px;
 }

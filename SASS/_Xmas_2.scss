@@ -93,10 +93,6 @@
             top: 10px;
             left: 100px;
             z-index: 100;
-            -webkit-animation: star 1s linear infinite;
-            -moz-animation: star 1s linear infinite;
-            -ms-animation: star 1s linear infinite;
-            animation: star 1s linear infinite;
         }
     }
     .gift {
@@ -104,6 +100,7 @@
             .gift_#{($i)} {
                 position: relative;
                 @if $i==1 {
+                    cursor: pointer;
                     top: 320px;
                     z-index: 99;
                 }
@@ -112,6 +109,7 @@
                     z-index: 1;
                 }
                 @else if $i==3 {
+                    cursor: pointer;
                     top: 300px;
                     left: 300px !important;
                 }
@@ -309,4 +307,27 @@
     -moz-animation: Xmas_text 5s linear infinite;
     -ms-animation: Xmas_text 5s linear infinite;
     animation: Xmas_text 5s linear infinite;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sled {
+    position: absolute;
+    background: url('../Images/sled.png');
+    height: 72px;
+    width: 202px; // -webkit-animation: sled 10s linear forwards;
+    // -moz-animation: sled 10s linear forwards;
+    // -ms-animation: sled 10s linear forwards;
+    // animation: sled 10s linear forwards;
+}
+
+.sled_run {
+    -webkit-animation: sled 10s linear forwards;
+    -moz-animation: sled 10s linear forwards;
+    -ms-animation: sled 10s linear forwards;
+    animation: sled 10s linear forwards;
+}
+
+body {
+    background-color: #343434;
 }
