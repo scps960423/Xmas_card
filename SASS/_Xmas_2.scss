@@ -37,7 +37,7 @@
             width: 20px;
             border-radius: 30px;
             position: absolute;
-            z-index: 99;
+            z-index: 0;
         }
         @for $i from 1 through 3 {
             .border_#{($i)} {
@@ -109,6 +109,7 @@
                 }
                 @else if $i==3 {
                     top: 300px;
+                    left: 300px !important;
                 }
                 $sum:(($i - 1)*100)+55;
                 left: ($sum)*1px;
@@ -188,6 +189,7 @@
                     top: 0;
                     left: 0px;
                     z-index: 1;
+                    box-shadow: 2px 3px rgb(96, 179, 187);
                 }
                 .ball_open {
                     animation: ball_open 0.75s linear forwards;
@@ -224,6 +226,34 @@
                     -o-animation: doll_close 0.5s linear 0.5s forwards;
                 }
             }
+        }
+        .tsmc_bor {
+            position: absolute;
+            background-color: #F44336;
+            padding: 11px 5px;
+            border-radius: 30px;
+            left: 5px;
+            z-index: 1;
+            color: $writh;
+            font-weight: 300;
+            -moz-box-shadow: 0px 3px rgb(162, 42, 33);
+            -webkit-box-shadow: 0px 3px rgb(162, 42, 33);
+            box-shadow: 0px 3px rgb(162, 42, 33);
+        }
+        .tsmc_bor_st {
+            top: -50px;
+        }
+        .tsmc_bor_open {
+            animation: tsmc_open 0.5s linear 1.5s forwards;
+            -moz-animation: tsmc_open 0.5s linear 1.5s forwards;
+            -webkit-animation: tsmc_open 0.5s linear 1.5s forwards;
+            -o-animation: tsmc_open 0.5s linear 1.5s forwards;
+        }
+        .tsmc_bor_close {
+            animation: tsmc_close 0.5s linear 0.5s forwards;
+            -moz-animation: tsmc_close 0.5s linear 0.5s forwards;
+            -webkit-animation: tsmc_close 0.5s linear 0.5s forwards;
+            -o-animation: tsmc_close 0.5s linear 0.5s forwards;
         }
     }
 }

@@ -23,7 +23,8 @@ $(document).ready(function () {
     $cover_2 = $(".gift_3 .cover"),
     $bowknot_2 = $(".gift_3 .bowknot"),
     $ball = $(".gift_1 .ball"),
-    $doll = $(".gift_1 .doll");
+    $doll = $(".gift_1 .doll"),
+    $tsmc = $(".gift_3 .tsmc_bor");
 
   var $gift_cover_open = "cover_open",
     $gift_bowknot_open = "bowknot_open",
@@ -35,7 +36,11 @@ $(document).ready(function () {
     $ball_close = "ball_close",
     $doll_open = "doll_open",
     $doll_close = "doll_close",
-    $doll_st = "doll_st";
+    $doll_st = "doll_st",
+    $tsmc_open = "tsmc_bor_open ",
+    $tsmc_close = "tsmc_bor_close"
+    $tsmc_st = "tsmc_bor_st"
+  ;
 
   var flag1 = false,
     flag2 = false;
@@ -45,24 +50,28 @@ $(document).ready(function () {
       $bowknot_1.addClass($gift_bowknot_open).removeClass($gift_bowknot_close + " " + $bowknot_st);
       $ball.addClass($ball_open).removeClass($ball_close);
       $doll.addClass($doll_open).removeClass($doll_close + " " + $doll_st);
+     
       flag1 = true;
     } else {
-      $cover_1.addClass($gift_cover_close+" "+$cover_st).removeClass($gift_cover_open);
-      $bowknot_1.addClass($gift_bowknot_close+" "+$bowknot_st).removeClass($gift_bowknot_open);
+      $cover_1.addClass($gift_cover_close + " " + $cover_st).removeClass($gift_cover_open);
+      $bowknot_1.addClass($gift_bowknot_close + " " + $bowknot_st).removeClass($gift_bowknot_open);
       $ball.addClass($ball_close).removeClass($ball_open);
       $doll.addClass($doll_close + " " + $doll_st).removeClass($doll_open);
+      
       flag1 = false;
     }
 
   })
   $gift_2.click(function () {
     if (flag2 == false) {
-      $cover_2.addClass($gift_cover_open).removeClass($gift_cover_close);
-      $bowknot_2.addClass($gift_bowknot_open).removeClass($gift_bowknot_close);
+      $cover_2.addClass($gift_cover_open).removeClass($gift_cover_close + " " + $cover_st);
+      $bowknot_2.addClass($gift_bowknot_open).removeClass($gift_bowknot_close + " " + $bowknot_st);
+      $tsmc.addClass($tsmc_open).removeClass($tsmc_close + " " + $tsmc_st );
       flag2 = true;
     } else {
       $cover_2.addClass($gift_cover_close + " " + $cover_st).removeClass($gift_cover_open);
       $bowknot_2.addClass($gift_bowknot_close + " " + $bowknot_st).removeClass($gift_bowknot_open);
+      $tsmc.addClass($tsmc_close + " " + $tsmc_st).removeClass($tsmc_open);
       flag2 = false;
     }
 
