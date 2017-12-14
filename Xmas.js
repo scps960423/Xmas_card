@@ -29,22 +29,18 @@ $(document).ready(function () {
   var $Xms_1 = $(".XmasCard_1"),
     $img = $(".card_main").find("img");
 
-    // $img = [img1, img2, img3, img4]
 
-    // $img.each(function(i, n){
-    //   $img.eq(i) = $(n)
-    // })
 
     $img.each(function(i, n){
       var $this = $(this),
         _src = $this.attr("src");
 
-        if (_src.match('functional_012.gif')) {
+        if (_src.match('functional_012.jpg')) {
           $this.css("display", "none");
           $Xms_1.css("display", "block")
         }
 
-        if (_src.match('functional_013.gif')) {
+        if (_src.match('functional_013.jpg')) {
           $this.css("display", "none");
           $Xms_2.css("display", "block")
         }

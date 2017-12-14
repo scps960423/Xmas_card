@@ -2,6 +2,7 @@
 .XmasCard_2 {
     background: -webkit-linear-gradient(#3F51B5, #f1bfbf);
     .tree {
+        top: 50px;
         left: 100px;
         width: 100px;
         position: relative;
@@ -262,8 +263,8 @@
 
 .snow_flood {
     position: absolute;
-    height: 80px;
-    width: 800px;
+    height: 100px;
+    width: 100%;
     background-color: $writh;
     bottom: 0;
     z-index: 0;
@@ -299,7 +300,7 @@
 
 .Xmas2_text {
     position: absolute;
-    right: 100px;
+    right: 210px;
     background: url('../Images/Xmas_text2.png') no-repeat;
     width: 200px;
     height: 290px;
@@ -315,10 +316,7 @@
     position: absolute;
     background: url('../Images/sled.png');
     height: 72px;
-    width: 202px; // -webkit-animation: sled 10s linear forwards;
-    // -moz-animation: sled 10s linear forwards;
-    // -ms-animation: sled 10s linear forwards;
-    // animation: sled 10s linear forwards;
+    width: 202px;
 }
 
 .sled_run {
