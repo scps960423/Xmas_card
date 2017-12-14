@@ -1157,8 +1157,8 @@ body {
   0% {
     background: transparent;
     position: absolute;
-    top: 291px;
-    left: 654px;
+    top: 271px;
+    left: 607px;
     color: transparent;
   }
   50% {
@@ -1569,21 +1569,21 @@ body {
   width: 55px;
   height: 55px;
   border: 1px solid #fff;
-  margin: 42px 31px 0px 40px;
+  margin: 32px 21px 0px 30px;
   box-shadow: 4px 4px 12px -2px rgba(51, 51, 102, 0.5);
 }
-/* line 87, ../sass/_Xmas_1.scss */
+/* line 86, ../sass/_Xmas_1.scss */
 .XmasCard_1 ul .day:nth-child(25) {
   color: #343434;
   background: transparent;
   position: absolute;
-  top: 291px;
-  left: 654px;
+  top: 271px;
+  left: 607px;
   position: absolute;
 }
-/* line 95, ../sass/_Xmas_1.scss */
+/* line 94, ../sass/_Xmas_1.scss */
 .XmasCard_1 ul .day:nth-child(5) {
-  margin-right: 260px;
+  margin-right: 250px;
 }
 
 /* line 4, ../sass/Xmax.scss */
